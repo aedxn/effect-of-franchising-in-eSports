@@ -5,11 +5,10 @@ This project holds my code for my MSc Thesis in Economics. I originally coded it
 
 In my thesis I have created a new dataset from two different sources, namely [lol.fandom](https://lol.fandom.com/wiki/Help:Leaguepedia_API) and [elixers](https://oracleselixir.com/stats/players/byTournament). Using player level data I analysed how the change in the league format from a non-franchised system with relegation and promotion to a franchised system without relegation and promotion of the biggest eSports game "League of Legends" effected:
 
-* item1 The probability of competing
-* item2 Whether this shift in the probability of competing comes from
-item 2 Whether this shift in the probability of competing comes from
-    Sub Item 2 New players entering
-    b) Existing players leaving
+* The probability of competing
+* Whether this shift in the probability of competing comes from
+    * New players entering
+    * Existing players leaving
 3) The competitive Balance
 
 Abstract:
