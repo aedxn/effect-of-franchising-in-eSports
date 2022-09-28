@@ -23,8 +23,6 @@ df_main <- df_main %>%
   select(-(prob_remain:reg_dummy4))
 
 
-  
-
 ## Model 2 probability of First entering into the League: reshaping ####
 ## I reshape the model s.t. I include observations in which the player does not compete (0) until he first enters (1)
 ## Observations after first entering are excluded
@@ -57,6 +55,7 @@ df_m3 <- df_main %>%
 
 # dummy variable that shows when a player first left (dependent variable for model 3)
 df_m3$exit <- ifelse(df_m3$played == 0, 1, 0)
+
 
 ## Model 4: Effect on the Competitive Balance: reshaping ###
 ## I delete all obs. in which players do not actively play and calculate the standard deviation of wins (SDW)
