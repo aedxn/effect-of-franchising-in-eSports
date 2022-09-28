@@ -14,7 +14,7 @@
 
 
 # cleaned data set imported from excel
-df_main <- read_excel("C:\\Users\\aedan\\OneDrive\\Uni\\Masters\\Barcelona\\Thesis\\Gaming\\Esports\\Data\\Regressions\\Survival Model\\dataset_C_4_bday.xlsx")
+df_main <- read_excel("dataset_C_4_bday.xlsx")
 
 #deleted id = 11, since Player name is NA and has played no games
 df_main <- df_main %>%
@@ -55,7 +55,18 @@ df_m3 <- df_main %>%
   slice(seq_len(match(0, GP, nomatch = n()))) %>%
   ungroup
 
-# dummy variable that shows when a player first left
+# dummy variable that shows when a player first left (dependent variable for model 3)
+df_m3$exit <- ifelse(df_m3$played == 0, 1, 0)
+
+## Model 4: Effect on the Competitive Balance: reshaping ###
+## I delete all obs. in which players do not actively play and calculate the standard deviation of wins (SDW)
+
+#only keeping the rows in which players are actively playing
+df_m4 <- df_main %>%
+  filter(GP>0)
+
+
+
 
 
 
