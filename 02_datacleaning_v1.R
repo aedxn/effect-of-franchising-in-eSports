@@ -10,7 +10,8 @@
 
 
 ####################################################################################
-### Script to clean and prepare my data sets for each of my four models
+### Script to clean and prepare my data sets for each of my four models. My original dataset only included observations in which players competed.
+### I extended the dataset to also show when a player did not compete. This process is, however, not included in my code.
 
 
 # cleaned data set imported from excel
