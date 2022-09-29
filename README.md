@@ -16,4 +16,4 @@ Abstract:
 I find that that the probability of competing for players has diminished significantly. The reason for this is that the change in the league format made it more likely for new players to enter into the competition. This suggests that the overall level of play has increased as bad players are being wedged out and
 only the high performing players remain. Lastly, using the standard deviation of wins, a common competitive balance estimator, I find that the competitive balance has decreased after the treatment. Since there is an increase in new player talent, the distortion in the competitive balance implies that the already successful teams are investing more into new talent compared to unsuccessful teams.
 
-My full thesis can be found in the pdf file called, MSc_Thesis
+My full thesis can be found in the pdf file called MSc_Thesis
