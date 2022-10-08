@@ -23,6 +23,12 @@ df_main <- df_main %>%
   select(-(CTR:SourceName)) %>%
   select(-(prob_remain:reg_dummy4))
 
+# generating treatment variable
+df_main$treatment <- ifelse(df_main$hy == 2017-07-01 & df_main$Region == 'CN' | 
+                            df_main$hy == 2018-01-01 & df_main$Region == 'NA' |
+                            df_main$hy == 2019-01-01 & df_main$Region == 'EUW'|
+                            df_main$hy == 2021-01-01 & df_main$Region == 'KR', 1, 0)
+
 
 ## Model 2 probability of First entering into the League: reshaping ####
 ## I reshape the model s.t. I include observations in which the player does not compete (0) until he first enters (1)
