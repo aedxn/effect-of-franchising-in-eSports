@@ -21,7 +21,7 @@ library(ggplot2)
 
 
 # calculating mean professional career using the dataset of model 3 (Exit Model)
-df_m3 <- read_excel("C:\\Users\\aedan\\OneDrive\\Uni\\Masters\\Barcelona\\Thesis\\Gaming\\Esports\\Data\\Regressions\\Survival Model\\Exit Model\\dataset_C_4_exit.xlsx")
+df_m3 <- read_excel("dataset_C_4_exit.xlsx")
 
 avg_career_length <- (mean(df_m3$played)*4900)/1198     # 4900 obs and 1198 individual players
 
@@ -51,7 +51,7 @@ ggplot(data = splits_played , aes(x=n))+
 rm(list = ls())
 
 # data
-df_main <- read_excel("C:\\Users\\aedan\\OneDrive\\Uni\\Masters\\Barcelona\\Thesis\\Gaming\\Esports\\Data\\Regressions\\Survival Model\\dataset_C_4_bday.xlsx")
+df_main <- read_excel("dataset_C_4_bday.xlsx")
 
 df_4 <- subset(df_main, GP >= 1)
 
@@ -104,7 +104,7 @@ ggplot(df_4_sub, aes(hy, SDW)) +
 
 #Import data that has been reshaped in Stata and attach
 
-df_main <- read_excel("C:\\Users\\aedan\\OneDrive\\Uni\\Masters\\Barcelona\\Thesis\\Gaming\\Esports\\Data\\Regressions\\Survival Model\\dataset_C_4_bday.xlsx")
+df_main <- read_excel("dataset_C_4_bday.xlsx")
 attach(df_main) #accesses my variables of the df
 
 
@@ -144,7 +144,7 @@ model_1 <- did_multiplegt(df_main, Y, G, T, D, placebo = placebo, dynamic = dyna
 rm(list = ls())
 
 #data
-df_m2 <- read_excel("C:\\Users\\aedan\\OneDrive\\Uni\\Masters\\Barcelona\\Thesis\\Gaming\\Esports\\Data\\Regressions\\Survival Model\\Entry Model\\dataset_C_4_entry.xlsx")
+df_m2 <- read_excel("dataset_C_4_entry.xlsx")
 
 #defining variables
 Y_2 = "entry"
@@ -169,7 +169,7 @@ model_2 <- did_multiplegt(df_m2, Y_2, G_2, T_2, D_2, placebo = placebo, dynamic 
 rm(list = ls())
 
 #data
-df_m3 <- read_excel("C:\\Users\\aedan\\OneDrive\\Uni\\Masters\\Barcelona\\Thesis\\Gaming\\Esports\\Data\\Regressions\\Survival Model\\Exit Model\\dataset_C_4_exit.xlsx")
+df_m3 <- read_excel("dataset_C_4_exit.xlsx")
 
 #defining variables
 Y_3 = "exit"
@@ -196,7 +196,7 @@ model_3 <- did_multiplegt(df_m3, Y_3, G_3, T_3, D_3, placebo = placebo, dynamic 
 rm(list = ls())
 
 #date
-df_main <- read_excel("C:\\Users\\aedan\\OneDrive\\Uni\\Masters\\Barcelona\\Thesis\\Gaming\\Esports\\Data\\Regressions\\Survival Model\\dataset_C_4_bday.xlsx")
+df_main <- read_excel("dataset_C_4_bday.xlsx")
 
 df_4 <- subset(df_main, GP >= 1)
 
