@@ -3,7 +3,7 @@ MSc Thesis: "The Effect of Franchising on the Competitive Balance in eSports"
 
 This project holds my code for my MSc Thesis in Economics. I originally coded it in Stata and have replicated my code in R, except for the robustness checks. I have excluded some parts of the data cleanign process, such as deletion of observations to set up the panel and other duplicates.
 
-In my thesis I have created a new dataset from two different sources, namely [lol.fandom](https://lol.fandom.com/wiki/Help:Leaguepedia_API) and [elixers](https://oracleselixir.com/stats/players/byTournament). Using player level data I analysed how the change in the league format from a non-franchised system with relegation and promotion to a franchised system without relegation and promotion of the biggest eSports game "League of Legends" effected:
+In my thesis I have created a new dataset from two different sources, namely [lol.fandom](https://lol.fandom.com/wiki/Help:Leaguepedia_API)'s API and [elixers](https://oracleselixir.com/stats/players/byTournament). Using player level data I analysed how the change in the league format from a non-franchised system with relegation and promotion to a franchised system without relegation and promotion of the biggest eSports game "League of Legends" effected:
 
 1) The probability of competing
 2) Whether this shift in the probability of competing comes from
